@@ -14,6 +14,14 @@ jobs:
         uses: actions/setup-node@v3.6.0
         with:
           node-version: "18.x"
+      - name: Configure CI Git User
+        run: |
+          git config --global user.name '@shubhamp-sf'
+          git config --global user.email 'shubham.prajapat@sourcefuse.com'
+          git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_PAT@github.com/shubhamp-sf/lerna-release-flow-with-gh-action
+        env:
+          GITHUB_PAT: ${{ secrets.GH_PAT }}
+
       - name: Bootstrap
         run: |
           npm ci
