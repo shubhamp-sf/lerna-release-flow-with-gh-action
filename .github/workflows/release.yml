@@ -29,6 +29,6 @@ jobs:
         env:
           FOO_BAR_VAR: ${{ vars.FOO_BAR_VAR }}
       - name: publish
-        run: lerna publish --yes
+        run: lerna publish --yes --force-publish --ci --conventional-commits
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
