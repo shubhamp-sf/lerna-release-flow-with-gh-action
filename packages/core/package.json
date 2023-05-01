@@ -1,0 +1,15 @@
+{
+  "name": "@testing-123/core",
+  "version": "1.0.0",
+  "description": "testing-123/core",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"✅ Build\" && exit 0",
+    "test": "echo \"✅ Test\" && exit 0"
+  },
+  "author": "shubhamp-sf",
+  "license": "ISC",
+  "dependencies": {
+    "girlfriend": "^0.0.1"
+  }
+}
