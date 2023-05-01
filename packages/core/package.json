@@ -1,6 +1,6 @@
 {
   "name": "@testing-123/core",
-  "version": "0.0.5-alpha.1",
+  "version": "0.0.5-alpha.2",
   "description": "testing-123/core",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,5 @@
   "dependencies": {
     "girlfriend": "^0.0.1"
   },
-  "gitHead": "0f0b0398596abc6369e2268a72762783d0b7d3c3"
+  "gitHead": "cfb517449e5941691f00ade440c09e2aab9ac0a8"
 }
