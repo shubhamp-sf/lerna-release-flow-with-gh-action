@@ -21,6 +21,15 @@ jobs:
           git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_PAT@github.com/shubhamp-sf/lerna-release-flow-with-gh-action
         env:
           GITHUB_PAT: ${{ secrets.GH_PAT }}
+      - name: Authenticate with Registry
+        run: |
+          npm logout
+          echo "@shubhamp-sf:registry=http://registry.npmjs.org/" > .npmrc
+          echo "registry=http://registry.npmjs.org/" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Bootstrap
         run: |
