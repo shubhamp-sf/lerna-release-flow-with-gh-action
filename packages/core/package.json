@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "girlfriend": "^0.0.1"
-  }
+  },
+  "gitHead": "eac5843603368e6643bc4a16dd61fcad0181d272"
 }
