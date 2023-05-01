@@ -1,0 +1,6 @@
+35 error Error: Command failed with exit code 128: git tag v0.0.1 -m v0.0.1
+35 error fatal: tag 'v0.0.1' already exists
+35 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
+35 error     at handlePromise (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:114:26)
+35 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+35 error     at async Promise.all (index 0)

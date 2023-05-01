@@ -1,6 +1,6 @@
 {
   "name": "@testing-123/core",
-  "version": "1.0.0",
+  "version": "0.0.5-alpha.3",
   "description": "testing-123/core",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "girlfriend": "^0.0.1"
-  }
+  },
+  "gitHead": "cfb517449e5941691f00ade440c09e2aab9ac0a8"
 }

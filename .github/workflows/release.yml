@@ -1,0 +1,50 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  Release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: "18.x"
+      - name: Configure CI Git User
+        run: |
+          git config --global user.name '@shubhamp-sf'
+          git config --global user.email 'shubham.prajapat@sourcefuse.com'
+          git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_PAT@github.com/shubhamp-sf/lerna-release-flow-with-gh-action
+        env:
+          GITHUB_PAT: ${{ secrets.GH_PAT }}
+      - name: Authenticate with Registry
+        run: |
+          echo "@shubhamp-sf:registry=https://registry.npmjs.org/" > .npmrc
+          echo "registry=https://registry.npmjs.org/" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Bootstrap
+        run: |
+          npm ci
+          npx lerna bootstrap
+          npx lerna run build
+          npx lerna run test
+      - name: Log FOO_BAR secret
+        run: echo $FOO_BAR
+        env:
+          FOO_BAR: ${{ secrets.FOO_BAR }}
+      - name: Log FOO_BAR variable
+        run: echo $FOO_BAR_VAR
+        env:
+          FOO_BAR_VAR: ${{ vars.FOO_BAR_VAR }}
+      - name: publish
+        run: lerna publish --yes --ci --conventional-commits
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
