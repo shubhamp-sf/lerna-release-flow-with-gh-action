@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.3.0 (2023-05-02)
+
+
+### Features
+
+* something else ([a9839c7](https://github.com/shubhamp-sf/lerna-release-flow-with-gh-action/commit/a9839c7a3187f34ec1f9dd04d74c6f3d4e4d48f5))
+
+
+
+
+
 ## [0.2.1](https://github.com/shubhamp-sf/lerna-release-flow-with-gh-action/compare/v0.2.0...v0.2.1) (2023-05-02)
 
 **Note:** Version bump only for package @testing-123/core
