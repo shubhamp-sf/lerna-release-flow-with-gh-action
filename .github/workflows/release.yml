@@ -43,6 +43,8 @@ jobs:
           FOO_BAR_VAR: ${{ vars.FOO_BAR_VAR }}
       - name: bump versions
         run: lerna version --yes --ci --conventional-commits
+      - name: logout from npm to test failures
+        run: npm logout
       - name: publish
         run: lerna publish from-git --yes
         env:
