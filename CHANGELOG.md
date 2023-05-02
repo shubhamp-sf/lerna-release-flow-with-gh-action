@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.7.0 (2023-05-02)
+
+
+### Features
+
+* want release to fail ([9ee1d0c](https://github.com/shubhamp-sf/lerna-release-flow-with-gh-action/commit/9ee1d0c00ef3052844780a15f2c7ae2b4ef1a82a))
+
+
+
+
+
 ## 0.6.2 (2023-05-02)
 
 **Note:** Version bump only for package root
