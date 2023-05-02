@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.2](https://github.com/shubhamp-sf/lerna-release-flow-with-gh-action/compare/@testing-123/core@0.9.1...@testing-123/core@0.9.2) (2023-05-02)
+
+
+### Bug Fixes
+
+* patch version ([156d167](https://github.com/shubhamp-sf/lerna-release-flow-with-gh-action/commit/156d167309fc3f36bef5b4ac0cbfa1828dacca98))
+
+
+
+
+
 ## 0.9.1 (2023-05-02)
 
 
