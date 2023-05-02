@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/shubhamp-sf/lerna-release-flow-with-gh-action/compare/v0.3.0...v0.4.0) (2023-05-02)
+
+
+### Features
+
+* abcd ([9f3b937](https://github.com/shubhamp-sf/lerna-release-flow-with-gh-action/commit/9f3b937194f528af513ae59a3329b7845d51fc61))
+
+
+
+
+
 # 0.3.0 (2023-05-02)
 
 
