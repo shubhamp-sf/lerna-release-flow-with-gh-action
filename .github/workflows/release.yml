@@ -48,6 +48,6 @@ jobs:
       - name: bump versions
         run: lerna version --yes --ci --conventional-commits
       - name: publish
-        run: lerna publish from-package --yes # to always compare changes from registry
+        run: npx lerna publish from-package --yes # to always compare changes from registry
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
