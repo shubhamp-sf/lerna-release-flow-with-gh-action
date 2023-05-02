@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.6.0 (2023-05-02)
+
+
+### Features
+
+* something else ([768733e](https://github.com/shubhamp-sf/lerna-release-flow-with-gh-action/commit/768733e46a5662d106bc16bad73cd5ca1268126c))
+
+
+
+
+
 # 0.5.0 (2023-05-02)
 
 
