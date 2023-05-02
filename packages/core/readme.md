@@ -3,3 +3,5 @@ just for fun
 234
 456
 2134
+
+`lerna publish from-git`
