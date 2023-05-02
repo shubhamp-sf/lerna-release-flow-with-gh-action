@@ -1,6 +1,6 @@
 {
   "name": "@testing-123/core",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "testing-123/core",
   "main": "index.js",
   "scripts": {
