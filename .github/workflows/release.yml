@@ -46,4 +46,4 @@ jobs:
       - name: publish
         run: lerna publish from-git --yes
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: I_want_publish_to_fail
